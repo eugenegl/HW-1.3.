@@ -22,6 +22,8 @@ html {
 body {
     margin: 0;
     padding: 0;
+
+    overflow-x: hidden;
 }
 
 .first__section {
@@ -40,13 +42,29 @@ body {
 
 
 header {
-    text-decoration: none;
     padding-top: 24px;
 
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 
-    gap: 40px;
+    margin: 0 60px 180px;
+}
+
+.nav__middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 160px;
+}
+
+.nav__center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 60px;
 }
 
 nav {
@@ -64,15 +82,13 @@ a {
     transition: 0.3s;
 }
 
+
 a:hover {
     color: #ffffff;
-}
 
-header {
-    display: flex;
-    gap: 20px;
+    padding-bottom: 10px;
 
-    margin: 0px auto 180px;
+    border-bottom: 1px solid #ffffff;
 }
 
 .main__content {
@@ -82,6 +98,11 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.simplicity__span {
+    margin: 0 0 80px -130px;
+    color: #858684;
 }
 
 h1 {
@@ -99,7 +120,7 @@ h1 {
     position: absolute;
     z-index: 1;
 
-    width: 3000px;
+    width: 3500px;
     height: 24px;
     left: -32px;
     top: 780px;
@@ -113,21 +134,24 @@ h1 {
 
     color: #71870E;
 
-    animation: ticker 60s linear infinite;
+    animation: ticker 10s linear infinite;
 }
 
 @keyframes ticker {
     0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+    100% { transform: translateX(-15%); }
   }
 
-#biography {
-    text-align: end;
+.biography__span {
+    margin: 0 200px 80px 0;
+    color: #ffffff;
+
+    text-align: center;
 }
 
 .front__photo {
     width: 640px;
-    margin: 150px auto;
+    margin: 110px auto;
 
     display: flex;
     flex-direction: column;
@@ -143,7 +167,7 @@ h1 {
 
 .about {
     position: relative;
-    margin-top: 200px;
+    margin-top: 300px;
 }
 
 .about__content {
@@ -172,7 +196,7 @@ h1 {
     transform: rotate(90deg);
 }
 
-#scroll__span {
+.scroll__span {
     font-size: 14px;
     line-height: 21px;
 
@@ -182,7 +206,7 @@ h1 {
     transform: rotate(180deg);
 }
 
-#scroll__line {
+.scroll__line {
     margin-left: 60px;
 
     scale: 4;
@@ -207,17 +231,17 @@ h1 {
     margin: 60px 0 60px 180px;
 }
 
-#audio__visual {
+.audio__visual {
     margin-bottom: 55px;
     text-align: end;
 }
 
-#about {
+.about__span {
     position: absolute;
     top: 108px;
 }
 
-#utterly__unique {
+.utterly__unique {
     margin: 0 0 0 180px;
 }
 
